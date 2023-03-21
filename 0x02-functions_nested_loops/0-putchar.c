@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- * main - Entry Point
- * Description: 'Prints _putchar to stdout'
- * Return: always 0
+ * main - print _putchar
+ * is written in mbah
+ * Return: 0 (success)
  */
+
 int main(void)
 {
 	_putchar('_');
@@ -15,5 +17,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	return(0)
+	return (0);
 }
