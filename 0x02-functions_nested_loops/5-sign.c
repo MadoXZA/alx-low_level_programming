@@ -1,8 +1,7 @@
-#inculde "main.h"
+#include"main.h"
 
 /**
- * print_sign - Determines if the input number
- * greater, equal or less than zero
+ * print_sign - Determines if the input number greater, equal or less than zero
  *
  * @n: the input number is an integer.
  *
@@ -24,7 +23,7 @@ int print_sign(int n)
 	else
 	{
 		_putchar(48);
-		return(0);
+		return (0);
 	}
-	_putchar("\n")
+	_putchar("\n");
 }
