@@ -7,10 +7,10 @@
  * check_num - check if string contains only digits
  * @str: string to check
  *
- * Return : 1 if string contains digits, 0 if otherswise
+ * Return: 1 if string contains digits, 0 if otherswise
  */
 
-int check_num( char *str)
+int check_num(char *str)
 {
 	unsigned int count;
 
@@ -21,9 +21,9 @@ int check_num( char *str)
 		{
 			return (0);
 		}
-		count ++;
+		count++;
 	}
-	return(1);
+	return (1);
 }
 
 
@@ -32,7 +32,7 @@ int check_num( char *str)
  * @argc: Count arguments
  * @argv: Arguments
  *
- * Return Always 0 (success)
+ * Return: Always 0 (success)
  */
 
 int main(int argc, char *argv[])
