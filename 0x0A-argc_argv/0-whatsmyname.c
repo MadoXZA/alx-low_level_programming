@@ -1,15 +1,15 @@
 #include<stdio.h>
 
 /**
- * main - runs the code
+ * main - entry point
  * @argc: argument counters
  * @argv: array of arguments from cmd
- * Return 0 (success)
+ * Return: 0 on success
  */
 
 int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
 	(void)argc;
-	return 0;
+	return (0);
 }
