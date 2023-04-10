@@ -50,7 +50,7 @@ int _atoi(char *s)
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: 0 (succes0. 1 (error)
+ * Return: 0 (succes). 1 (error)
  *
  */
 
@@ -68,6 +68,8 @@ int main(int argc, char *argv[])
 	num2 = _atoi(argv[2]);
 	result = num1 * num2;
 
+	printf("num1 = %d\n", num1);
+	printf("num2 = %d\n", num2);
 	printf("%d\n", result);
 
 	return (0);
