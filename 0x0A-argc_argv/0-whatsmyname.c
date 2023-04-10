@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * main - prints program names
- * @argc: the number of arguments
- * @argv: the array of arguments
+ * main - runs the code
+ * @argc: argument counters
+ * @argv: array of arguments from cmd
  * Return 0 (success)
  */
 
