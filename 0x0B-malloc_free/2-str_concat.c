@@ -1,49 +1,56 @@
-#include"main.h"
-#include <stdlib.h>
-
+#include "main.h"
 /**
- * str_concat - get ends of inpout and adds together for size
- * @s1: input one to concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
- */
+  * _strlen - arrays to count
+  *@s: elements of an array
+  *Return: i
+  */
+int _strlen(char *s)
+{
+	unsigned int i;
 
+	i = 0;
+	while (s[i] != '\0') /*string to be counted in a character*/
+	{
+	i++;
+	}
+	return (i);
+}
+/**
+  *str_concat - a pointer back to an array
+  *@s1: array one
+  *@s2: array two
+  *Return: Always an array dynamic
+  */
 char *str_concat(char *s1, char *s2)
 {
-	char *conct;
-	int j, bi;
+	char *dst;
+	unsigned int i, j, size;
 
+	/*if the array is empty*/
 	if (s1 == NULL)
-		s1 = "";
+	s1 = "";
 	if (s2 == NULL)
-		s2 = "";
+	s2 =  "";
 
-	j = bi = 0;
+	/*count size total*/
+	size = (_strlen(s1) + _strlen(s2) + 1);
 
-	while (s1[j] != '\0')
-		j++;
-	while (s2[bi] != '\0')
-		bi++;
+	/*malloc*/
+	dst = (char *) malloc(size * sizeof(char));
 
-	conct = malloc(sizeof(char) * (j = bi = 0));
-
-	if (conct == NULL)
-
-		return (NULL);
-
-	j = bi = 0;
-
-	while (s1[j] != '\0')
+	if (dst == 0)
 	{
-		conct[j] = s1[j];
-		j++;
+	return (NULL);
 	}
-	while (s2[bi] != '\0')
-	{
-		conct[j] = s2[bi];
-		j++, bi++;
-	}
-	conct[j] = '\0';
 
-	return (conct);
+	/*concatenate arrays*/
+	for (i = 0; *(s1 + i) != '\0'; i++)
+	*(dst + i) = *(s1 + i);
+
+	for (j = 0; *(s2 + j) != '\0'; j++)
+	{
+		*(dst + i) = *(s2 + j);
+		i++;
+	}
+	return (dst);
 }
