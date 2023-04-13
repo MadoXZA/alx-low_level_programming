@@ -15,7 +15,7 @@ void *malloc_checked(unsigned int c)
 	ptr = malloc(c);
 
 	if (ptr == NULL)
-		exit ((int)98); /* Explicitly cast to int */
+		exit (98);
 
 	return (ptr);
 }
