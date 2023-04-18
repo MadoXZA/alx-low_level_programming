@@ -12,7 +12,7 @@
 int _strlen(char *s)
 {
 	int j;
-	
+
 	j = 0;
 
 	while (s[j] != '\0')
@@ -28,7 +28,7 @@ int _strlen(char *s)
  * including the terminating null byte (\0)
  * @dest: pointer to buffer in which the string is copied
  * @src: string to be copied
- * 
+ *
  * Return: the pointer to dest
  */
 
@@ -72,7 +72,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
-	dog->name =malloc(sizeof(char) * (len1 + 1));
+	dog->name = malloc(sizeof(char) * (len1 + 1));
 	if (dog->name == NULL)
 	{
 		free(dog);
